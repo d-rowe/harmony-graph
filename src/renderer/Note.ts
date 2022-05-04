@@ -20,14 +20,6 @@ export default class Note {
         return this.mesh;
     }
 
-    setX(x: number) {
-        this.mesh.position.x = x;
-    }
-
-    setWidth(width: number) {
-        this.mesh.scale.set(width, 1, 1);
-    }
-
     setMidi(midi: number) {
         // center on midi note 52
         this.mesh.translateY(midi - 52);
